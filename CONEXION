@@ -1,0 +1,37 @@
+utilizando el sistema;
+utilizando System.Collections.Generic;
+mediante System.Linq;
+usando System.Text;
+utilizando System.Threading.Tasks;
+utilizando MySql.Data.MySqlClient;
+
+actividad_BD del espacio de nombres
+{
+ Conexión de clases
+    {
+
+        public static MySqlConnection conexiones()
+        {
+            string servidor = "localhost";
+            string bd = "transportes";
+            string usuario = "root";
+            string password = "";
+
+ string cadenaConexion = "Database=" + bd + ";D ata Source=" + servidor +
+ "; ID de usuario =" + usuario + "; Contraseña=" + contraseña + "";
+
+ probar
+            {
+                MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+ devolver conexionBD;
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+                return null;
+            }
+
+        }
+
+    }
+}
